@@ -1,0 +1,7 @@
+{% if messages %}
+{% for mes in messages %}
+<div class="alert alert-{{mes.tags}}" role="alert">
+    <a href="#" class="alert-link">{{mes}}</a>. 
+  </div>
+{% endfor %}
+{% endif%}
